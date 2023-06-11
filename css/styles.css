@@ -64,6 +64,8 @@ img {
 /*-----------HEADER--------------*/
 .page-header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .header-container {
   display: flex;
@@ -152,7 +154,7 @@ img {
   height: 4px;
   background-color: var(--pressed-state-color);
   border-radius: 2px;
-  bottom: -4px;
+  bottom: -1px;
   left: 0px;
 }
 
@@ -167,6 +169,8 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .welcome-title {
@@ -223,7 +227,6 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--main-header-color);
-  margin-bottom: 8px;
 }
 
 .benefits-list-text {
@@ -240,6 +243,8 @@ img {
   justify-content: center;
   padding: 24px 100px;
   background-color: var(--alternative-white-color);
+  border-radius: 4px;
+  margin-bottom: 8px;
 }
 
 /*----------ABOUT US------------*/
@@ -317,14 +322,16 @@ img {
 }
 
 .team-social-container {
-  margin-top: 8px;
-  margin-bottom: 32px;
+  margin-top: 20px;
+  margin-bottom: 44px;
 }
 
 .team-social-list {
   display: flex;
   flex-direction: row;
   gap: 24px;
+  align-items: center;
+  justify-content: center;
 }
 
 .team-social-link {
@@ -341,7 +348,7 @@ img {
 }
 
 .team-member {
-  padding: 32px 16px;
+  margin-top: 32px;
 }
 
 /*--------------------CUSTOMERS-----------------*/
@@ -368,18 +375,28 @@ img {
   justify-content: center;
 }
 
+.customer-list-item {
+  width: calc((100% - 120px) / 6);
+  height: 88px;
+}
+
 .customers-list-link {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--icons-static-state);
   fill: var(--icons-static-state);
   border: 1px solid var(--icons-static-state);
   border-radius: 4px;
   padding: 16px 32px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-list-link:hover,
 .customers-list-link:focus {
+  color: var(--pressed-state-color);
   fill: var(--pressed-state-color);
   border-color: var(--pressed-state-color);
 }
@@ -417,7 +434,11 @@ img {
 
 .footer-subtitle {
   color: var(--white-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
   margin-bottom: 16px;
+  letter-spacing: 0.02em;
 }
 
 .footer-social-list {
@@ -441,6 +462,7 @@ img {
 .footer-container {
   display: flex;
   gap: 120px;
+  align-items: baseline;
 }
 /*----------PORTFOLIO FILTER--------------*/
 .portfolio-projects {
