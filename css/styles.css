@@ -104,10 +104,10 @@ img {
   gap: 40px;
 }
 .header-menu-item {
-  padding: 24px 0;
 }
 
 .header-menu-link {
+  display: block;
   padding: 24px 0;
 }
 
@@ -228,6 +228,7 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--main-header-color);
+  margin-bottom: 8px;
 }
 
 .benefits-list-text {
@@ -242,10 +243,11 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 24px 100px;
   background-color: var(--alternative-white-color);
   border-radius: 4px;
   margin-bottom: 8px;
+  width: 264px;
+  height: 112px;
 }
 
 /*----------ABOUT US------------*/
@@ -337,7 +339,6 @@ img {
   align-items: center;
   width: 100%;
   height: 100%;
-  padding: 12px;
   background-color: var(--primary-brand-color);
   border-radius: 50%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -397,7 +398,6 @@ img {
   color: var(--icons-static-state);
   border: 1px solid var(--icons-static-state);
   border-radius: 4px;
-  padding: 16px 32px;
   height: 100%;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -456,12 +456,16 @@ img {
 .footer-social-list {
   display: flex;
   gap: 16px;
+}
+
+.footer-social-item {
   width: 40px;
   height: 40px;
 }
 .footer-social-link {
   display: flex;
-  padding: 8px;
+  width: 100%;
+  height: 100%;
 
   background-color: var(--primary-brand-color);
   border-radius: 50%;
@@ -481,7 +485,6 @@ img {
 
 .footer-container {
   display: flex;
-  gap: 120px;
   align-items: baseline;
 }
 
